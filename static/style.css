@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=IBM+Plex+Sans+Thai+Looped:wght@100&family=Josefin+Sans&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+/* #navbar{
+    position: fixed;
+    width: 100%;
+} */
+#navbar ul{
+    display: flex;
+    
+    /* justify-content: center; */
+    background-color: rgb(79, 75, 75);
+    align-items: center;
+    /* padding: 7px 10px; */
+}
+#navbar li{
+    list-style: none;
+    padding: 15px 15px;
+    
+}
+#navbar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+#navbar li a:hover{
+    text-decoration: none;
+    color: rgb(238, 181, 68);
+}
+#logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    
+    margin: 5px;
+    margin-right: 20px;
+    font-size: 18px;
+   
+}
+#logo img{
+    height: 65px;
+    width: 61px;
+    padding: 1px 5px;
+    margin-left: 10px;
+}
+section#one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 27px;
+    color: white;
+    background: center / cover  no-repeat url("/static/demo.jpg");
+    background-color: yellow;
+    height: 500px;
+    
+    
+    /* font-size: 27px; */
+}
+.cards-img{
+    display: flex;
+    margin: 5px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    position: relative;
+    top: 10px;
+    
+
+}.cards-img p{
+    font-family: 'Smooch', cursive;
+}
+.cards-img img{
+    height: 70px;
+    
+}
+section#two{
+    background-color: rgb(241, 231, 232);
+    height: 250px;
+    
+    
+}
+section#two h2{
+    text-align: center;
+    padding: 10px;
+}
+section#two .cards{
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 159px;
+    width: 350px;
+    display: inline-block;
+    margin: 0px 5px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    left: 230px;
+}
+section#three{
+    background-color: rgb(184, 228, 184);
+    text-align: center;
+    height: 270px;
+
+}
+section#three h2{
+    padding: 20px;
+}
+.sponsors{
+    display: flex;
+    justify-content: center;
+    
+}
+.sponsors img{
+    height: 70px;
+    width: 150px;
+    padding: 1px 10px;
+    margin: 20px;
+}
+footer#foot{
+    background-color: black;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    align-items: center;
+}
+
+

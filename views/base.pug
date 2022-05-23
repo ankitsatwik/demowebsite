@@ -1,0 +1,28 @@
+//- base.pug
+//this is template in heritance ... in other words we can say this is the layout on which the other files.pug works by filling them accordingly
+doctype html
+html
+  head
+    title Satwik Dance Academy
+    block scripts
+    //-   script(src='/static/index.js');
+    block style 
+    style 
+        include ../static/style.css
+      
+  body
+    nav#navbar 
+        ul 
+          div#logo 
+            img(src="/static/img/pic2.png")
+            | SDA
+          li #[a(href='/') Home]
+          li #[a(href='/') services] 
+          li #[a(href='/') Info]
+          li #[a(href='/') About] 
+          li #[a(href='/Contact' target="_blank" ) Contact Us]
+    block content
+        
+    block footer
+      footer#foot 
+        | Copyright © 2022 satwikdanceacademy.com | All rights reserved

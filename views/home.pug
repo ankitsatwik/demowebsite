@@ -1,0 +1,37 @@
+extends base.pug
+
+block scripts 
+    script(src="/static/index.js")
+block style 
+    style
+      include ../static/style.css
+
+block content 
+    section#one 
+        h1 Welcome to Satwik's Dance Academy
+        h3 This is where you can dance
+    section#two 
+        h2 Our Mission
+        div.cards 
+           
+          div.cards-img 
+            img(src="/static/img/pic3.png")
+            p This shows dance enthusiasm, It is the place where we can learn together.
+        div.cards 
+           
+          div.cards-img 
+            img(src="/static/img/pic4.png")
+            p Lot of energy is created along with the skills of dance steps. Come and join.
+        div.cards 
+          
+          div.cards-img 
+            img(src="/static/img/pic5.png")
+            p Heyy, Welcome to the dance world, new techniques and stances is going to kick out from here.
+
+    section#three 
+        h2 Our sponsor's
+        div.sponsors 
+          img(src="/static/img/sponsor pic1.png", alt="sponsors")
+          img(src="/static/img/sponsor pic2.png", alt="sponsors")
+          img(src="/static/img/sponsor pic3.png", alt="sponsors")
+          img(src="/static/img/sponsor pic4.png", alt="sponsors")

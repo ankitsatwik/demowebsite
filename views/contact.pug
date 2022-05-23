@@ -1,0 +1,22 @@
+extends base.pug 
+//-this is used to link to the base.pug file which is just like a empty form which can be filled here accordingly.
+
+block scripts 
+    script(src="/static/index.js")
+block style 
+    style
+      include ../static/contact.css
+      include ../static/style.css
+
+
+block content 
+    div.container 
+       h3 Contact Us
+       form(action="/Contact",method="post", class="Myform")
+           input(type="text" class="myinput" name="name" placeholder="Enter your name") 
+           input(type="phone" class="myinput" name="phone" placeholder="Enter your Phone number") 
+           input(type="email" class="myinput" name="email" placeholder="Enter your email Id") 
+           input(type="address" class="myinput" name="address" placeholder="Enter your Address") 
+           input(type="text" class="myinput" name="details" placeholder="Enter your details")
+           button(class="btn")
+            | Submit
